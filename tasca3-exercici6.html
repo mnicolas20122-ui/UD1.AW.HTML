@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Control A. Web 2010-2011 Taules</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 10px;
+        }
+        table {
+            width: 100%;
+            border: 1px solid #808080;
+            border-spacing: 3px;
+            background-color: #ffffff;
+        }
+        caption {
+            margin-bottom: 2px;
+        }
+        td {
+            border: 1px solid #808080;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menú</h1>
+
+    <ol>
+        <li><a href="#taulaA">Taula A. Estructura</a></li>
+        <li><a href="#taulaB">Taula B. Resultat</a></li>
+        <li><a href="#objecte">Objecte Insertat</a></li>
+    </ol>
+
+    <table id="taulaA">
+        <caption>Taula A. Estructura</caption>
+        <tr>
+            <!-- Cel·la blava (esquerra dalt): ocupa 2 files -->
+            <td rowspan="2" style="background-color: #0000FF; width: 36%; height: 210px; vertical-align: top; text-align: center;">
+                Aquí va el formulari
+            </td>
+            <!-- Cel·la vermella (dreta fila 1): ocupa 2 columnes -->
+            <td colspan="2" style="background-color: #FF0000; height: 48px; vertical-align: middle; text-align: left;">
+                Aquí provar alguns estils de lletres
+            </td>
+        </tr>
+        <tr>
+            <!-- Cel·la grisa (dreta fila 2): ocupa 2 columnes -->
+            <td colspan="2" style="background-color: #808080; height: 48px; vertical-align: middle; text-align: right;">
+                Aquí provar tots els tipus d'enllaços
+            </td>
+        </tr>
+        <tr>
+            <!-- Cel·la groga (esquerra baix): ocupa 2 files -->
+            <td rowspan="2" style="background-color: #FFFF00; height: 210px; vertical-align: top; text-align: center;">
+                Inserirem un altre taula
+            </td>
+            <!-- Cel·la rosa/fúcsia (centre fila 3) -->
+            <td style="background-color: #FF0055; width: 30%; height: 195px; vertical-align: top; text-align: left;">
+                Exemple de llistes ordenades
+            </td>
+            <!-- Cel·la verda (dreta fila 3) -->
+            <td style="background-color: #00E639; width: 34%; height: 195px; vertical-align: bottom; text-align: left;">
+                Exemple de llistes desordenades
+            </td>
+        </tr>
+        <tr>
+            <!-- Cel·la lila/morada (dreta fila 4): ocupa 2 columnes -->
+            <td colspan="2" style="background-color: #5500FF; height: 95px; vertical-align: middle; text-align: center;">
+                Inserirem una imatge
+            </td>
+        </tr>
+        <tr>
+            <!-- Cel·la blau grisós (fila 5 inferior): ocupa les 3 columnes -->
+            <td colspan="3" style="background-color: #B4C2CD; height: 22px; vertical-align: middle; text-align: center;">
+                Aquí hi anirà el codi font
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

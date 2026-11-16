@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Control A. Web 2010-2011 Taules</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 10px;
+        }
+        table.principal {
+            width: 100%;
+            border: 1px solid #808080;
+            border-spacing: 3px;
+            background-color: #ffffff;
+        }
+        table.principal > caption {
+            margin-bottom: 2px;
+        }
+        table.principal > tbody > tr > td {
+            border: 1px solid #808080;
+            padding: 5px;
+        }
+        h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.17em;
+        }
+        /* Estils per a la taula niuada (Taula Prova) */
+        table.niuada {
+            margin: 0 auto;
+            border: 1px solid #808080;
+            border-spacing: 2px;
+        }
+        table.niuada caption {
+            margin-bottom: 2px;
+        }
+        table.niuada td {
+            border: 1px solid #808080;
+            padding: 2px 5px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        /* Estil per al text destacat i remarcada a la cel·la vermella */
+        .destacada {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <table id="taulaB" class="principal">
+        <caption>Taula B. Resultat</caption>
+        <tr>
+            <!-- Cel·la blava: Formulari -->
+            <td rowspan="2" style="background-color: #0000FF; width: 32%; vertical-align: top; text-align: center;">
+                <h3>Formulari</h3>
+                <form name="f1" action="#" method="post">
+                    Nom: <input type="text" name="nom" size="15"><br>
+                    P: <input type="password" name="pass" size="15"><br>
+                    SQR: <textarea name="sqr" rows="3" cols="12"></textarea><br>
+                    Professió: 
+                    <input type="checkbox" name="prof" value="estudiant" checked> Estudiant 
+                    <input type="checkbox" name="prof" value="treball"> Treball<br>
+                    Estat Civil: 
+                    <input type="radio" name="estat" value="si"> Si 
+                    <input type="radio" name="estat" value="no" checked> No<br>
+                    Edat: 
+                    <select name="edat">
+                        <option value="16-20" selected>Entre 16 i 20</option>
+                        <option value="21-30">Entre 21 i 30</option>
+                        <option value="mes30">Més de 30</option>
+                    </select><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </form>
+            </td>
+
+            <!-- Cel·la vermella: Estils de lletres -->
+            <td colspan="2" style="background-color: #FF0000; vertical-align: top; text-align: left;">
+                <h3>Aquí provar tots els estils de lletres</h3>
+                <p style="margin: 10px 0 0 0;">
+                    <b>Negreta</b> 
+                    <i>Itàlica</i> 
+                    <u>marcada</u> 
+                    <em>Destacada</em> 
+                    <q>Entre comes</q> 
+                    <small>Lletra petita</small> 
+                    <strong>Remarcada</strong> 
+                    log<sub>e</sub> = 1; m<sup>2</sup>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Cel·la grisa: Tipus d'enllaços -->
+            <td colspan="2" style="background-color: #808080; vertical-align: top; text-align: right;">
+                <h3>Aquí provar tots els tipus d'enllaços</h3>
+                <div style="text-align: center; margin-top: 10px;">
+                    <a href="tasca3-exercici6.html">Tornar al menu</a> | 
+                    <a href="tasca3-exercici6.html#taulaA">Tornar a la Taula A. Estructura</a> | 
+                    <a href="https://www.google.com" target="_blank">Google</a> | 
+                    <a href="#calendari">Calendari</a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Cel·la groga: Inserirem un altre taula -->
+            <td rowspan="2" style="background-color: #FFFF00; vertical-align: top; text-align: center;">
+                <h3>Inserirem un altre taula</h3>
+                <table class="niuada">
+                    <caption>Taula<br>Prova</caption>
+                    <tr>
+                        <td>A</td>
+                        <td rowspan="2">B</td>
+                        <td rowspan="2">C</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">E</td>
+                        <td rowspan="2">F</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2">G</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>I</td>
+                        <td style="display:none;"></td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Cel·la rosa/fúcsia: Llistes ordenades -->
+            <td style="background-color: #FF0055; width: 32%; height: 190px; vertical-align: top; text-align: left;">
+                <h3>Exemple de llistes ordenades</h3>
+                <ol>
+                    <li>Aplicacions Web</li>
+                    <li>Sistemes operatius en xarxa</li>
+                    <li>Seguretat</li>
+                    <li>Bases de dades</li>
+                </ol>
+            </td>
+
+            <!-- Cel·la verda: Llistes desordenades -->
+            <td style="background-color: #00E639; width: 36%; height: 190px; vertical-align: middle; text-align: left;">
+                <h3>Exemple de llistes desordenades</h3>
+                <ul>
+                    <li>Aplicacions Web</li>
+                    <li>Sistemes operatius en xarxa</li>
+                    <li>Seguretat</li>
+                    <li>Bases de dades</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Cel·la lila/morada: Imatge -->
+            <td colspan="2" style="background-color: #5500FF; vertical-align: top; text-align: center;">
+                <h3>Imatge</h3>
+                <!-- Substitueix 'imatge.png' pel nom real del teu fitxer d'imatge -->
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1920px-CSS3_logo_and_wordmark.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" width="160" height="55" style="border: 1px solid #333;">
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Cel·la blau grisós inferior: Codi font -->
+            <td colspan="3" style="background-color: #B4C2CD; vertical-align: top; text-align: center;">
+                <h3>Aquí hi anirà el codi font</h3>
+                <pre style="margin: 5px 0; font-size: 0.85em;">function comprovar(){ if (document.f1.nom.value==""){alert("Això no potser!"); return 0;} }</pre>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
